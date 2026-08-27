@@ -66,6 +66,15 @@ This plugin surfaces those conflicts so you can reconcile them.
 - Note text is sent to the configured LLM endpoint; do not scan a vault whose
   contents may not leave your machine unless the endpoint is local.
 
+## Privacy and network use
+
+This plugin only makes network requests to the LLM endpoint **you configure** in its settings
+(OpenAI-compatible; a local Ollama or LM Studio works fully offline). Note titles and the first
+part of each note body are sent to that endpoint for embedding, and candidate note pairs are sent
+to the chat model for verification. Nothing is sent anywhere else, no telemetry is collected, and
+no requests are made until you run a scan with a configured endpoint. Using a hosted provider may
+require a paid account with that provider.
+
 ## Installation
 
 This plugin is **not yet in the community store**. To install it manually:
