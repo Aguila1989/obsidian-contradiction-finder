@@ -87,3 +87,8 @@ This plugin is **not yet in the community store**. To install it manually:
 5. Add a couple of notes that disagree (e.g. one saying "The office opens at
    8am", another saying "The office opens at 9am"), then run
    **Scan vault for contradictions** and open the panel.
+
+## Support
+
+If this plugin is useful to you, you can support its development at
+[Buy Me a Coffee](https://buymeacoffee.com/aguila1989).
