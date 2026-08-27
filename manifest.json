@@ -1,9 +1,11 @@
 {
-  "id": "contradiction-finder",
-  "name": "Contradiction Finder",
-  "version": "0.1.0",
-  "minAppVersion": "1.5.0",
-  "description": "Finds notes whose claims conflict with each other using embeddings plus an LLM verifier.",
-  "author": "Kevin Demeulenaere",
-  "isDesktopOnly": false
+    "id":  "contradiction-finder",
+    "name":  "Contradiction Finder",
+    "version":  "0.1.0",
+    "minAppVersion":  "1.5.0",
+    "description":  "Finds notes whose claims conflict with each other using embeddings plus an LLM verifier.",
+    "author":  "Aguila1989",
+    "isDesktopOnly":  false,
+    "authorUrl":  "https://github.com/Aguila1989",
+    "fundingUrl":  "https://buymeacoffee.com/aguila1989"
 }
