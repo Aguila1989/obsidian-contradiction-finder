@@ -68,7 +68,7 @@ export default class ContradictionFinderPlugin extends Plugin {
       }
       await leaf.setViewState({ type: VIEW_TYPE_CONTRADICTIONS, active: true });
     }
-    workspace.revealLeaf(leaf);
+    await workspace.revealLeaf(leaf);
   }
 
   /** Run the full scan pipeline, driving a progress Notice and refreshing the view. */

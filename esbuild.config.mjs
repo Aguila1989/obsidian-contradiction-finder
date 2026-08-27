@@ -1,6 +1,5 @@
 import esbuild from "esbuild";
 import process from "node:process";
-import builtins from "builtin-modules";
 
 const prod = process.argv[2] === "production";
 
@@ -14,7 +13,6 @@ const context = await esbuild.context({
     "@codemirror/language", "@codemirror/lint", "@codemirror/search",
     "@codemirror/state", "@codemirror/view",
     "@lezer/common", "@lezer/highlight", "@lezer/lr",
-    ...builtins,
   ],
   format: "cjs",
   target: "es2020",

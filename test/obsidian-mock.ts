@@ -3,7 +3,7 @@
 // "obsidian" to this file. Pure-logic tests use the real helper implementations
 // (normalizePath, parseYaml, moment, debounce, getAllTags, parseLinktext); the
 // class stubs exist only so `import { Plugin, ItemView, ... }` resolves.
-import * as jsyaml from "js-yaml";
+import { parse as yamlParse, stringify as yamlStringify } from "yaml";
 import momentImpl from "moment";
 
 // ---- helper functions with real-ish behavior --------------------------------
@@ -17,11 +17,11 @@ export function normalizePath(path: string): string {
 }
 
 export function parseYaml(str: string): unknown {
-  return jsyaml.load(str);
+  return yamlParse(str);
 }
 
 export function stringifyYaml(obj: unknown): string {
-  return jsyaml.dump(obj, { lineWidth: -1 });
+  return yamlStringify(obj, { lineWidth: 0 });
 }
 
 export const moment = momentImpl;

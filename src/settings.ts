@@ -90,7 +90,6 @@ export class ContradictionSettingTab extends PluginSettingTab {
       .addSlider((s) =>
         s
           .setLimits(0.5, 0.99, 0.01)
-          .setDynamicTooltip()
           .setValue(this.plugin.settings.similarityThreshold)
           .onChange(async (v) => {
             this.plugin.settings.similarityThreshold = v;
