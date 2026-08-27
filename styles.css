@@ -1,0 +1,118 @@
+/* Contradiction Finder side panel */
+
+.contradiction-finder {
+  padding: 0 12px 12px;
+}
+
+.contradiction-finder .cf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  background: var(--background-secondary);
+  padding: 8px 0;
+  z-index: 1;
+}
+
+.contradiction-finder .cf-header h4 {
+  margin: 0;
+}
+
+.contradiction-finder .cf-rescan {
+  cursor: pointer;
+}
+
+.contradiction-finder .cf-rescan:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.contradiction-finder .cf-empty {
+  color: var(--text-muted);
+  font-size: 0.9em;
+  padding: 16px 4px;
+  text-align: center;
+}
+
+.contradiction-finder .cf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contradiction-finder .cf-card {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  background: var(--background-primary);
+  padding: 10px 12px;
+}
+
+.contradiction-finder .cf-titles {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.contradiction-finder .cf-title {
+  color: var(--text-accent);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contradiction-finder .cf-title:hover {
+  text-decoration: underline;
+}
+
+.contradiction-finder .cf-vs {
+  color: var(--text-muted);
+  font-weight: 400;
+  font-size: 0.85em;
+}
+
+.contradiction-finder .cf-confidence {
+  margin-top: 4px;
+  font-size: 0.8em;
+  color: var(--text-muted);
+}
+
+.contradiction-finder .cf-statements {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contradiction-finder .cf-statement {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.contradiction-finder .cf-badge {
+  flex: 0 0 auto;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: var(--background-modifier-border);
+  color: var(--text-normal);
+  font-size: 0.75em;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contradiction-finder .cf-explanation {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: 0.85em;
+  color: var(--text-muted);
+  font-style: italic;
+}

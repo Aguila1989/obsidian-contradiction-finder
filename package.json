@@ -1,0 +1,29 @@
+{
+  "name": "contradiction-finder",
+  "version": "0.1.0",
+  "description": "Finds notes whose claims conflict with each other using embeddings plus an LLM verifier.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit && node esbuild.config.mjs production",
+    "test": "vitest run",
+    "version": "node version-bump.mjs && git add manifest.json versions.json"
+  },
+  "keywords": [
+    "obsidian-plugin"
+  ],
+  "author": "Kevin Demeulenaere",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.30",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.20.2",
+    "js-yaml": "^4.1.0",
+    "moment": "^2.30.1",
+    "obsidian": "latest",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.1"
+  }
+}

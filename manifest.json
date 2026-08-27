@@ -1,0 +1,9 @@
+{
+  "id": "contradiction-finder",
+  "name": "Contradiction Finder",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Finds notes whose claims conflict with each other using embeddings plus an LLM verifier.",
+  "author": "Kevin Demeulenaere",
+  "isDesktopOnly": false
+}
